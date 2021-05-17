@@ -1,0 +1,50 @@
+---
+title: issue 2
+slug: issue-2
+image: ./images/html-1.png
+date: 2021-05-16
+author: john smith
+images:
+  - ./images/html-2.png
+  - ./images/html-3.png
+---
+
+<!-- in ogni pagina!!!! -->
+
+import { RegVideo, Video } from '../../components/Complete'
+import video from '../../assets/connect.mp4'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+
+# ciao
+
+<iframe
+  width="100%"
+  height="200"
+  scrolling="no"
+  frameborder="no"
+  allow="autoplay"
+  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/813389542&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+></iframe>
+
+il mio **video**
+
+<p style={{ marginTop: '5rem' }}>
+  <Video />
+</p>
+
+_I'm baby humblebrag neutra taiyaki af vice bespoke locavore fanny pack_ ramps vexillologist succulents. Normcore etsy pour-over adaptogen skateboard fashion axe, bushwick food truck beard lumbersexual master cleanse actually deep v. **Retro cardigan raw denim franzen kickstarter you probably haven't heard of them literally** aesthetic snackwave four dollar toast. Keffiyeh synth umami, helvetica yr flexitarian jean shorts banh mi cardigan leggings letterpress paleo intelligentsia narwhal.
+
+<Video src="https://www.youtube.com/embed/ipIMtZyax7o" />
+<RegVideo src={video} />
+<Video src="https://www.youtube.com/embed/EimzgewJ3YE" />
+
+<GatsbyImage
+  image={getImage(props.images[0])}
+  alt="random stuff"
+  className="img"
+/>
+<GatsbyImage
+  image={getImage(props.images[1])}
+  alt="random stuff"
+  className="img"
+/>
